@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-logo">Ahmad Hassan</div>
+        <ul class="navbar-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+        <!-- Intro Section -->
+    <section id="about" class="intro-section">
+        <div class="intro-text">
+            <h1>Web Developer</h1>
+            <p>Computer Science graduate passionate about building responsive, user-focused web applications using HTML, CSS, JavaScript, and modern tools.</p>
+        </div>
+        <div class="intro-image">
+            <img src="./pic.jpg" alt="Ahmad's Photo">
+        </div>
+    </section>
+    <hr style="border: 2px solid teal; width: 100%;">
+
+    <section id="projects" class="projects-section">
+    <h1>My Projects</h1>
+    <div class="projects-grid">
+        <div class="project-box" onclick="toggleProject(this)">
+            <h3>Deal-Docks AI Classified</h3>
+            <a href="https://github.com/yourusername/project1" target="_blank">View Code</a>
+            <div class="project-desc">
+                <p>
+                    <ul>
+                        <li>Built a web-based product listing platform using Python, Flask, Django (backend) and React, HTML, CSS, JavaScript (frontend) with secure Firebase authentication.</li><br>
+                        <li>Trained a YOLO image recognition model on Roboflow and Google Colab, achieving 90%+ accuracy in product identification.</li><br>
+                        <li>Integrated Gemini API to generate optimized product descriptions using keyword and generate title.</li><br>
+                        <li>Implemented dynamic pricing suggestions via real-time web scraping from competitor sites, enhancing pricing intelligence.</li><br>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="project-box" onclick="toggleProject(this)">
+            <h3>Recipe Finder Website</h3>
+            <a href="https://github.com/yourusername/project2" target="_blank">View Code</a>
+            <div class="project-desc">
+                <p>
+                    <ul>
+                        <li>Designed and developed a multi-page recipe website with search, contact, blogs and authentication pages.</li><br>
+                        <li>Implemented responsive UI using HTML, CSS, JavaScript, and Bootstrap for better user experience.</li><br>
+                        <li>Integrated recipe API fetching to dynamically display recipes creating a full front-end web solution.</li><br>
+                        <li>Deployed live on GitHub Pages for public access and professional showcasing.</li><br>
+                        <a href="https://ahmaddhariwal.github.io/Recipe-FinderProject/">Live Demo</a><br>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="project-box" onclick="toggleProject(this)">
+            <h3>Personal Portfolio Website</h3>
+            <a href="https://github.com/yourusername/project4" target="_blank">View Code</a>
+            <div class="project-desc">
+                <p>
+                    <ul>
+                        <li>Built a responsive personal portfolio using HTML, CSS, and JavaScript to showcase projects, skills, and education.</li><br>
+                        <li>Integrated interactive project displays, a contact form, and social media links for enhanced user engagement.</li><br>
+                        <li>Designed a modern, accessible UI with custom graphics and smooth transitions.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="project-box" onclick="toggleProject(this)">
+            <h3>Password Strength Checker </h3>
+            <a href="https://github.com/yourusername/project3" target="_blank">View Code</a>
+            <div class="project-desc">
+                <p>
+                    <ul>
+                        <li>Developed a command-line tool in Python to assess password strength using regular expressions and conditional logic.</li> <br>
+                        <li>Evaluates user input based on length, character variety, and complexity criteria, providing instant feedback. Presented project in a technical viva, demonstrating functionality and logic design.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr style="border: 2px solid teal; width: 100%;">
+
+<div class="skill-grid">
+    <div class="skill-box">
+        <h3>Skills</h3>
+        <!-- Add this inside your .skill-box or after it -->
+        <div class="skills-images">
+            <img src="./HTML5.png" alt="HTML" title="HTML">
+            <img src="./css.jpeg" alt="CSS" title="CSS">
+            <img src="./js.jpeg" alt="JavaScript" title="JavaScript">
+            <img src="./MYSQL.png" alt="MySql" title="MySql">
+            <img src="./Python.png" alt="Python" title="Python">
+            <img src="./Mongo.png" alt="MongoDB" title="MongoDB">
+            <img src="./bootstrap.png" alt="Bootstrap" title="Bootstrap">
+    <!-- Add more skill images as needed -->
+        </div>
+    </div>
+</div>
+
+<hr style="border: 2px solid teal; width: 100%;">
+
+<!-- Education Section -->
+<section id="education" class="education-section">
+    <h3>Education</h3>
+    <div class="education-list">
+        <div class="education-item">
+            <h2>Bachelor of Science in Computer Science</h2>
+            <p>University Of Central Punjab,Lahore</p>
+            <p>2021 – 2025</p>
+            <ul>
+                <li>Relevant Courses: <br><br> Object Oriented Programming, Data Structures, Database Systems, Data Science, Deep learning.</li><br>
+                <li>CGPA: 3.1/4.0</li>
+            </ul>
+        </div>
+        <!-- Add more education items if needed -->
+    </div>
+</section>
+
+<hr style="border: 2px solid teal; width: 100%;">
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="contact-left">
+    <h2><span class="gradient-text">DO YOU HAVE A PROJECT TO DISCUSS?</span></h2>
+    <h3>GET IN TOUCH <span>💬</span></h3>
+    <div class="contact-info">
+      <div>
+        <span class="contact-label">CONTACT</span>
+        <p><a href="mailto:web.smm.zty@gmail.com">ahmaddhariwal023@gmail.com</a></p>
+      </div>
+      <div>
+        <span class="contact-label">LINKS</span>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/ahmadhassan023/"><img src="./linkedIn.png" alt="LinkedIn"></a>
+          <a href="https://github.com/AhmadDhariwal"><img src="./GitHub.png" alt="GitHub"></a>
+          <a href="#"><img src="./portfolio.png" alt="PortFolio"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form class="contact-form">
+    <h3>CONTACT FORM</h3>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit" class="glow-btn">SEND</button>
+  </form>
+</section>
+
+<hr style="border: 2px solid teal; width: 100%;">
+
+    <!-- ...existing code... -->
+
+<footer class="footer">
+  <div class="footer-content">
+    © 2025 Ahmad Hassan. All rights reserved.
+  </div>
+</footer>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
